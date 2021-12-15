@@ -1,0 +1,115 @@
+@font-face {
+    font-family: 'silkaregular';
+    src: url('silka-regular-webfont.eot');
+    src: url('silka-regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('silka-regular-webfont.woff2') format('woff2'),
+         url('silka-regular-webfont.woff') format('woff'),
+         url('silka-regular-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'silkaitalic';
+    src: url('silka-regularitalic-webfont.eot');
+    src: url('silka-regularitalic-webfont.eot?#iefix') format('embedded-opentype'),
+         url('silka-regularitalic-webfont.woff2') format('woff2'),
+         url('silka-regularitalic-webfont.woff') format('woff'),
+         url('silka-regularitalic-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    /* TODO */
+    /* background: url('../img/bg.jpg') no-repeat fixed center;  */
+    background-color: rgb(247, 249, 252) !important;
+    font-family: 'silkaregular', Verdana, sans-serif !important;
+}
+
+#intro, #name, #description, a, h4, h5, p {
+    font-family: 'silkaregular', Verdana, sans-serif;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+#intro {
+    font-size: 30px;
+    letter-spacing: -2px;
+}
+
+#name {
+    font-size: 60px;
+    font-weight: 700;
+}
+
+#description {
+    font-size: 20px;
+}
+
+.social-icon {
+    font-size: 30px;
+    margin: 10px;
+    color: black;
+    transition: font-size .2s;
+}
+
+.typewriter {
+    max-width: max-content;
+}
+
+/* NAV */
+.nav-item {
+    border: 1px rgba(0, 0, 0, 0) solid;
+    transition: border 1s;
+}
+
+a, h1, h2, h3, h4 {
+    font-family: 'silkaregular', Verdana, sans-serif;
+}
+
+.social-icon:hover {
+    font-size: 40px;
+}
+
+.nav-item:hover {
+    border: 1px black solid;
+}
+
+/* ANIMATION */
+.typewriter {
+    overflow: hidden; /* Ensures the content is not revealed until the animation */
+    border-right: .15em solid rgb(0, 0, 0); /* The typwriter cursor */
+    white-space: nowrap; /* Keeps the content on a single line */
+    margin: 0 auto; /* Gives that scrolling effect as the typing happens */
+    letter-spacing: .15em; /* Adjust as needed */
+    animation: 
+      typing 3.5s steps(40, end),
+      blink-caret .75s step-end infinite;
+  }
+  
+  /* The typing effect */
+  @keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+  }
+  
+  /* The typewriter cursor effect */
+  @keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: rgb(0, 0, 0); }
+  }
+
+@media screen and (max-width: 768px){
+    .nav-item, #logo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 576px){
+    #profile-img {
+        display: none;
+    }
+}

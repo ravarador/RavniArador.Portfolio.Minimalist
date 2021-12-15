@@ -1,0 +1,122 @@
+@media (prefers-reduced-motion: no-preference) {
+    :root {
+        scroll-behavior: smooth;
+    }
+}
+
+section.resume-section {
+    display: flex;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 5rem;
+    padding-top: 5rem;
+    max-width: 75rem;
+}
+
+    section.resume-section .resume-section-content {
+        width: 100%;
+    }
+    
+
+@media (min-width: 768px) {
+    section.resume-section {
+        min-height: 100vh;
+    }
+}
+
+@media (min-width: 992px) {
+    section.resume-section {
+        padding-left: 3rem;
+        padding-right: 3rem;
+        padding-top: 5rem;
+        padding-bottom: 5rem;
+    }
+}
+
+/* .bounce {
+  -moz-animation: bounce 2s infinite;
+  -webkit-animation: bounce 2s infinite;
+  animation: bounce 2s infinite;
+}
+
+@keyframes bounce {
+  0%, 20%, 50%, 80%, 100% {
+    transform: translateY(0);
+  }
+  40% {
+    transform: translateY(-30px);
+  }
+  60% {
+    transform: translateY(-15px);
+  }
+} */
+
+.dropdown-menu li {
+    background-color: rgb(247, 249, 252);
+}
+
+.dropdown-menu li a {
+    color: black;
+    text-decoration: rgba(0, 0, 0, 0) underline;
+    transition: text-decoration 1s;
+}
+
+.dropdown-menu li a:hover {
+    color: black;
+    text-decoration: rgb(0, 0, 0) underline;
+}
+
+.dropdown-menu {
+    padding: 0 !important;
+}
+
+.resume-section-header {
+    letter-spacing: 3px;
+}
+
+.subheading {
+    font-style: italic;
+    font-size: large;
+}
+
+/* TIMELINE */
+
+ul.timeline {
+    list-style-type: none;
+    position: relative;
+}
+ul.timeline:before {
+    left: 29px;
+    width: 1px;
+    height: 100%;
+    z-index: 200;
+    content: ' ';
+    background: gray;
+    display: inline-block;
+    position: absolute;
+}
+ul.timeline > li {
+    padding-left: 20px;
+    margin: 20px 0;
+}
+ul.timeline > li:before {
+    border: 2px solid black;
+    left: 20px;
+    width: 20px;
+    height:20px;
+    z-index: 200;
+    background: rgb(247, 249, 252);
+    display: inline-block;
+    position: absolute;
+    content: ' ';
+}
+
+.timeline li{
+    background-color: rgb(247, 249, 252);
+    transition: background-color 1s;
+}
+
+.timeline li:hover {
+    background-color: rgb(231, 227, 227);
+}
