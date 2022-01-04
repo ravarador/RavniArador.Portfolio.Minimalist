@@ -103,7 +103,7 @@ a, h1, h2, h3, h4 {
   }
 
 @media screen and (max-width: 768px){
-    .nav-item, #logo {
+    #logo {
         display: none;
     }
 }
